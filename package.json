@@ -1,38 +1,23 @@
 {
-  "name": "unpm",
-  "version": "1.5.0",
-  "description": "private npm registry in node",
+  "name": "dutyfree",
+  "version": "1.0.0",
+  "description": "Inspired by Michael Hayes' 'unpm', this is a modern, lightweight, private npm registry with a clean UI.",
   "main": "./index.js",
   "scripts": {
-    "test": "node ./test",
-    "start": "node bin/server.js | bunyan",
-    "coverage": "node scripts/coverage.js",
-    "coveralls": "npm run coverage | ./node_modules/coveralls/bin/coveralls.js"
   },
   "bin": {
     "unpm": "./bin/server.js"
   },
-  "author": "Michael Hayes",
-  "dependencies": {
-    "bunyan": "^1.8.0",
-    "concat-stream": "^1.4.6",
-    "mkdirp": "^0.3.5",
-    "nopt": "^2.2.1",
-    "range_check": "1.2.0",
-    "request": "^2.34.0",
-    "semver": "^2.3.2",
-    "unpm-auth": "^1.1.0",
-    "unpm-fs-backend": "^0.1.0",
-    "unpm-router": "^0.1.0"
-  },
+  "author": "Benjamin Duran",
+  "dependencies": {},
   "license": "MIT",
   "devDependencies": {
-    "tape": "2.5.0",
-    "blanket": "1.1.6",
-    "coveralls": "2.8.0",
-    "mocha-lcov-reporter": "0.0.1",
-    "unpm-mem-backend": "0.4.1",
-    "jsl": "0.1.1"
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "repository": {
     "type": "git",
@@ -43,12 +28,13 @@
     "private",
     "registry",
     "fnpm",
-    "unpm",
     "package",
-    "manager"
+    "manager",
+    "dutyfree",
+    "easy"
   ],
   "bugs": {
-    "url": "https://github.com/hayes/unpm/issues"
+    "url": "https://github.com/benduran/dutyfree/issues"
   },
-  "homepage": "https://github.com/hayes/unpm"
+  "homepage": "https://github.com/benduran/dutyfree"
 }
